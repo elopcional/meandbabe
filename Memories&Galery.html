@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little World | Memories</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+    <!-- ================================== -->
+    <!-- NAVIGATION MENU -->
+    <!-- ================================== -->
+
+    <ul class="nav nav-tabs" id="mainNavigation">
+
+        <li class="nav-item">
+            <a class="nav-link" href="first.html" data-translate="home">
+                Home – Our Little World
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="OurloveStory.html" data-translate="story">
+                Our Love Story
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active" href="Memories&Galery.html"
+               data-translate="memories" aria-current="page">
+                Memories & Gallery
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Loveletters.html" data-translate="letters">
+                Love Letters
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Ourdreams&bucketList.html" data-translate="dreams">
+                Our Dreams & Bucket List
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Faitha&Pryars.html" data-translate="faith">
+                Faith & Prayers
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="OurSpecialDates.html" data-translate="dates">
+                Our Special Dates
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="OurPlaylist.html" data-translate="playlist">
+                Our Playlist
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="QuestionsForTwo.html" data-translate="questions">
+                Questions for Two
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">
+                ❤️❤️❤️
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- ================================== -->
+    <!-- LANGUAGE SELECTOR -->
+    <!-- ================================== -->
+
+    <div class="language-selector">
+
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+
+            <option value="en">🇬🇧 English</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="es">🇪🇸 Español</option>
+
+        </select>
+
+    </div>
+
+
+    <!-- ================================== -->
+    <!-- GALLERY HEADER -->
+    <!-- ================================== -->
+
+    <header class="gallery-header">
+
+        <p class="eyebrow" data-translate="galleryEyebrow">
+            OUR LITTLE WORLD
+        </p>
+
+        <h1 data-translate="galleryTitle">
+            Little Moments, Unforgettable Memories
+        </h1>
+
+        <p class="subtitle" data-translate="gallerySubtitle">
+            Every picture tells a story, and every story is a piece of our journey.
+        </p>
+
+    </header>
+
+
+    <!-- ================================== -->
+    <!-- MAIN GALLERY -->
+    <!-- ================================== -->
+
+    <main class="gallery-container">
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <nav class="filter-buttons" aria-label="Gallery categories">
+
+            <button class="filter-btn active" data-filter="all"
+                    data-translate="allMemories">
+                All Memories
+            </button>
+
+            <button class="filter-btn" data-filter="dates"
+                    data-translate="ourDates">
+                Our Dates
+            </button>
+
+            <button class="filter-btn" data-filter="adventures"
+                    data-translate="adventures">
+                Adventures
+            </button>
+
+            <button class="filter-btn" data-filter="special"
+                    data-translate="specialOccasions">
+                Special Occasions
+            </button>
+
+            <button class="filter-btn" data-filter="everyday"
+                    data-translate="everydayMoments">
+                Everyday Moments
+            </button>
+
+            <button class="filter-btn" data-filter="videos"
+                    data-translate="videos">
+                Videos
+            </button>
+
+        </nav>
+
+
+        <!-- UPLOAD BUTTON -->
+
+        <div class="gallery-actions">
+
+            <label for="imageUpload" class="upload-button"
+                   data-translate="addMemory">
+                + Add a Memory
+            </label>
+
+            <input
+                type="file"
+                id="imageUpload"
+                accept="image/*,video/*"
+                multiple
+                hidden
+            >
+
+        </div>
+
+
+        <!-- GALLERY IMAGES -->
+
+        <section class="gallery-grid" id="galleryGrid">
+
+
+            <!-- OUR DATES -->
+
+            <article class="gallery-item" data-category="dates">
+
+                <img src="../me+babe/pictures/image2.jpg"
+                     alt="Our special date">
+
+                <div class="image-caption">
+
+                    <h3 data-translate="ourSpecialDate">
+                        Our Special Date
+                    </h3>
+
+                    <p data-translate="beautifulDay">
+                        A beautiful day together ❤️
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item" data-category="dates">
+
+                <img src="../me+babe/pictures/image7.JPEG"
+                     alt="A moment together">
+
+                <div class="image-caption">
+
+                    <h3 data-translate="timeTogether">
+                        Time Together
+                    </h3>
+
+                    <p data-translate="littleMomentsBigMemories">
+                        Little moments, big memories.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ADVENTURES -->
+
+            <article class="gallery-item" data-category="adventures">
+
+                <img src="../me+babe/pictures/visiting the world.jpg"
+                     alt="Our adventure">
+
+                <div class="image-caption">
+
+                    <h3 data-translate="ourAdventure">
+                        Our Adventure
+                    </h3>
+
+                    <p data-translate="exploringWorld">
+                        Exploring the world together 🌍
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- SPECIAL OCCASIONS -->
+
+            <article class="gallery-item" data-category="special">
+
+                <img src="../me+babe/pictures/image9.jpg"
+                     alt="Special celebration">
+
+                <div class="image-caption">
+
+                    <h3 data-translate="specialCelebration">
+                        A Special Celebration
+                    </h3>
+
+                    <p data-translate="dayWorthRemembering">
+                        A day worth remembering.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- EVERYDAY MOMENTS -->
+
+            <article class="gallery-item" data-category="everyday">
+
+                <img src="../me+babe/pictures/image8.JPG"
+                     alt="Everyday memory">
+
+                <div class="image-caption">
+
+                    <h3 data-translate="simpleHappiness">
+                        Simple Happiness
+                    </h3>
+
+                    <p data-translate="littleThingsSmile">
+                        The little things that make us smile.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- EMPTY GALLERY MESSAGE -->
+
+        <p id="emptyMessage" class="empty-message" hidden
+           data-translate="emptyGallery">
+
+            No memories in this category yet. Add a new memory!
+
+        </p>
+
+    </main>
+
+
+    <!-- ================================== -->
+    <!-- IMAGE LIGHTBOX -->
+    <!-- ================================== -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-lightbox" id="closeLightbox"
+                aria-label="Close">
+            &times;
+        </button>
+
+        <button class="lightbox-arrow previous" id="previousImage"
+                aria-label="Previous image">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content" id="lightboxContent"></div>
+
+        <button class="lightbox-arrow next" id="nextImage"
+                aria-label="Next image">
+            &#10095;
+        </button>
+
+        <p id="lightboxCaption"></p>
+
+    </div>
+
+
+    <!-- ================================== -->
+    <!-- GALLERY INTRODUCTION -->
+    <!-- ================================== -->
+
+    <hr class="gallery-divider">
+
+    <div class="gallery-content" style="text-align: center;">
+
+        <p data-translate="galleryParagraph1">
+            Some moments pass in seconds, but remain in our hearts for years.
+        </p>
+
+        <p data-translate="galleryParagraph2">
+            This gallery is a collection of memories that remind us of the places
+            we have visited, the experiences we have shared, the laughter we have
+            enjoyed, and the happiness we have found in each other's company.
+        </p>
+
+        <p data-translate="galleryParagraph3">
+            Every picture tells a story, and every story is a piece of our journey.
+            Our story is still being written, and the best chapters are yet to come.
+            One day, we will look back at these pictures and realize just how much
+            life we experienced together.
+        </p>
+
+    </div>
+
+
+    <!-- ================================== -->
+    <!-- FOOTER -->
+    <!-- ================================== -->
+
+    <footer class="music-footer">
+
+        <p class="gallery-closing">
+            <span data-translate="madeWithLove">
+                Made with love ❤️ — Raul &amp; Sua
+            </span>
+        </p>
+
+    </footer>
+
+
+    <!-- ================================== -->
+    <!-- JAVASCRIPT FILES -->
+    <!-- ================================== -->
+
+    <!-- Gallery functionality -->
+    <script src="gallery.js"></script>
+
+    <!-- Multilingual translation system -->
+    <script src="translations1.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navigation = document.getElementById("mainNavigation");
+
+    if (!navigation) return;
+
+    const links = navigation.querySelectorAll(".nav-link:not(.disabled)");
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+
+        const linkPage = new URL(link.href).pathname.split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.classList.remove("active");
+            link.removeAttribute("aria-current");
+        }
+
+    });
+
+});
+</script>
+</body>
+</html>

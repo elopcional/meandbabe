@@ -1,0 +1,1062 @@
+/* Main letters container */
+.letters-content {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 1.9;
+}
+
+/* Main headline */
+.letters-content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Romantic subtitle */
+.letters-content h2 {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Section headings */
+.letters-content h3 {
+    font-size: 23px;
+    margin-bottom: 18px;
+    color: #f5c6ce;
+}
+
+/* Paragraphs */
+.letters-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+/* Individual letter sections */
+.letter-section {
+    margin-top: 45px;
+    padding: 20px 25px;
+    border-left: 3px solid #e5b6bd;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 0 12px 12px 0;
+}
+
+/* Special occasion list */
+.letters-content ul {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.letters-content li {
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* Special message box */
+.special-message {
+    margin-top: 55px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.special-message h3 {
+    font-size: 24px;
+}
+
+.special-message p {
+    font-size: 19px;
+    font-style: italic;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.letters-footer {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px 50px;
+    color: #f5dfe2;
+    box-sizing: border-box;
+}
+
+.letters-footer p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.letters-footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    .letters-content {
+        width: 95%;
+        padding: 25px 10px;
+    }
+
+    .letters-content h1 {
+        font-size: 28px;
+    }
+
+    .letters-content h2 {
+        font-size: 22px;
+    }
+
+    .letters-content h3 {
+        font-size: 20px;
+    }
+
+    .letters-content p,
+    .letters-content li {
+        font-size: 16px;
+    }
+
+    .letter-section {
+        padding: 15px;
+    }
+
+    .special-message {
+        padding: 20px;
+    }
+
+    .special-message p {
+        font-size: 16px;
+    }
+}
+
+/* Main dreams container */
+.dreams-content {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 1.9;
+}
+
+/* Main headline */
+.dreams-content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Romantic subtitle */
+.dreams-content h2 {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Section headings */
+.dreams-content h3 {
+    font-size: 23px;
+    margin-bottom: 18px;
+    color: #f5c6ce;
+}
+
+/* Paragraphs */
+.dreams-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+/* Individual dream sections */
+.dream-section {
+    margin-top: 40px;
+    padding: 20px 25px;
+    border-left: 3px solid #e5b6bd;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 0 12px 12px 0;
+    transition: background 0.3s ease;
+}
+
+.dream-section:hover {
+    background: rgba(255, 255, 255, 0.11);
+}
+
+/* Dream lists */
+.dream-section ul {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.dream-section li {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 5px;
+}
+
+/* Closing message */
+.dreams-message {
+    margin-top: 55px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.dreams-message p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 2;
+    margin: 0;
+}
+
+/* Footer */
+.dreams-footer {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px 50px;
+    color: #f5dfe2;
+    box-sizing: border-box;
+}
+
+.dreams-footer p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.dreams-footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    .dreams-content {
+        width: 95%;
+        padding: 25px 10px;
+    }
+
+    .dreams-content h1 {
+        font-size: 28px;
+    }
+
+    .dreams-content h2 {
+        font-size: 22px;
+    }
+
+    .dreams-content h3 {
+        font-size: 20px;
+    }
+
+    .dreams-content p,
+    .dream-section li {
+        font-size: 16px;
+    }
+
+    .dream-section {
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .dreams-message {
+        padding: 20px;
+    }
+
+    .dreams-message p {
+        font-size: 17px;
+    }
+}
+
+/* Main faith container */
+.faith-content {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 1.9;
+}
+
+/* Main headline */
+.faith-content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Subtitle */
+.faith-content h2 {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Section headings */
+.faith-content h3 {
+    font-size: 23px;
+    color: #f5c6ce;
+    margin-bottom: 18px;
+}
+
+/* Paragraphs */
+.faith-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+/* Bible section heading */
+.faith-section-heading {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 30px !important;
+}
+
+/* Bible verse cards */
+.bible-verse {
+    margin: 25px 0;
+    padding: 22px 25px;
+    background: rgba(255, 255, 255, 0.07);
+    border-left: 3px solid #e5b6bd;
+    border-radius: 0 12px 12px 0;
+    transition: background 0.3s ease;
+}
+
+.bible-verse:hover {
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.bible-verse h4 {
+    color: #f5c6ce;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+.bible-verse .verse-text {
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.bible-verse .verse-reflection {
+    font-size: 16px;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* Prayer and spiritual goal sections */
+.faith-section {
+    margin-top: 45px;
+    padding: 22px 25px;
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 3px solid #e5b6bd;
+    border-radius: 0 12px 12px 0;
+}
+
+.faith-section ul,
+.faith-section ol {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.faith-section li {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 5px;
+}
+
+/* Closing prayer */
+.closing-prayer {
+    margin-top: 55px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 15px;
+}
+
+.closing-prayer h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.closing-prayer p {
+    font-size: 19px;
+    line-height: 2;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.faith-footer {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px 50px;
+    color: #f5dfe2;
+    box-sizing: border-box;
+}
+
+.faith-footer p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.faith-footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    .faith-content {
+        width: 95%;
+        padding: 25px 10px;
+    }
+
+    .faith-content h1 {
+        font-size: 28px;
+    }
+
+    .faith-content h2 {
+        font-size: 22px;
+    }
+
+    .faith-content h3 {
+        font-size: 20px;
+    }
+
+    .faith-content p,
+    .faith-section li {
+        font-size: 16px;
+    }
+
+    .bible-verse,
+    .faith-section {
+        padding: 17px;
+    }
+
+    .bible-verse .verse-text {
+        font-size: 17px;
+    }
+
+    .closing-prayer {
+        padding: 20px;
+    }
+
+    .closing-prayer p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* Main dates container */
+.dates-content {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 1.9;
+}
+
+/* Main headline */
+.dates-content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Subtitle */
+.dates-content h2 {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Section headings */
+.dates-content h3 {
+    font-size: 23px;
+    color: #f5c6ce;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.dates-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+/* Important dates section */
+.important-dates {
+    margin-top: 55px;
+}
+
+.important-dates h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Responsive table wrapper */
+.dates-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+/* Dates table */
+.dates-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* Table headings */
+.dates-table th {
+    background: rgba(255, 255, 255, 0.14);
+    color: #f5c6ce;
+    font-size: 18px;
+    text-align: left;
+    padding: 18px 22px;
+}
+
+/* Table cells */
+.dates-table td {
+    font-size: 17px;
+    padding: 17px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Table row hover effect */
+.dates-table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.dates-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Special moment box */
+.special-date-message {
+    margin-top: 55px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 15px;
+}
+
+.special-date-message h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.special-date-message p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* Footer */
+.dates-footer {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px 50px;
+    color: #f5dfe2;
+    box-sizing: border-box;
+}
+
+.dates-footer p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+.dates-footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    .dates-content {
+        width: 95%;
+        padding: 25px 10px;
+    }
+
+    .dates-content h1 {
+        font-size: 28px;
+    }
+
+    .dates-content h2 {
+        font-size: 22px;
+    }
+
+    .dates-content h3 {
+        font-size: 20px;
+    }
+
+    .dates-content p {
+        font-size: 16px;
+    }
+
+    .dates-table th,
+    .dates-table td {
+        font-size: 14px;
+        padding: 13px 12px;
+    }
+
+    .special-date-message {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+/* MUSIC PAGE */
+
+.music-page {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* Main headline */
+
+.music-page h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+    color: white;
+}
+
+/* Introduction */
+
+.music-introduction {
+    margin: 0 auto 35px;
+}
+
+.music-introduction p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.9;
+}
+
+/* Section heading */
+
+.music-page h2 {
+    text-align: center;
+    font-size: 27px;
+    margin: 30px 0 25px;
+    color: #f5c6ce;
+}
+
+/* Music collection cards */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.music-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-left: 3px solid #e5b6bd;
+    border-radius: 0 12px 12px 0;
+    padding: 22px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+}
+
+.music-card h3 {
+    color: #f5c6ce;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.music-card p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Closing message */
+
+.music-closing {
+    text-align: center;
+    margin: 35px auto 10px;
+    padding: 20px;
+}
+
+.music-closing p {
+    color: #f5dfe2;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Footer */
+
+.music-footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px 40px;
+    color: #f5dfe2;
+    box-sizing: border-box;
+}
+
+.music-footer p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.music-footer span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 768px) {
+
+    .music-page {
+        width: 95%;
+        padding: 25px 10px;
+    }
+
+    .music-page h1 {
+        font-size: 28px;
+    }
+
+    .music-page h2 {
+        font-size: 23px;
+    }
+
+    .music-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .music-card h3 {
+        font-size: 19px;
+    }
+
+    .music-introduction p,
+    .music-card p {
+        font-size: 16px;
+    }
+
+    .music-closing p {
+        font-size: 16px;
+    }
+}
+
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.photo-card {
+    flex: 1;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-7px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.photo-card img:hover {
+    transform: scale(1.03);
+}
+
+.photo-card h3 {
+    color: #f5c6ce;
+    font-size: 21px;
+    margin: 18px 0 10px;
+}
+
+.photo-card p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Lightbox background */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    text-align: center;
+    max-width: 85%;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 75vh;
+    border-radius: 12px;
+}
+
+.lightbox-content p {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.close-btn,
+.prev-btn,
+.next-btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.close-btn {
+    top: 20px;
+    right: 35px;
+}
+
+.prev-btn {
+    left: 25px;
+}
+
+.next-btn {
+    right: 25px;
+}
+
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .photo-card img {
+        height: 300px;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+}
+
+
+/* Main Conversation Section */
+.conversation-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    box-sizing: border-box;
+    color: white;
+    line-height: 1.9;
+}
+
+/* Main Headline */
+.conversation-section h1 {
+    text-align: center;
+    color: #f5c6ce;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+/* Introduction */
+.conversation-intro {
+    margin: 0 auto 50px;
+    text-align: left;
+}
+
+.conversation-intro p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* Question Categories */
+.question-category {
+    margin-bottom: 45px;
+}
+
+.question-category h2 {
+    color: #f5c6ce;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Individual Question Cards */
+.question-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-left: 3px solid #e5b6bd;
+    border-radius: 0 12px 12px 0;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.question-card:hover {
+    background: rgba(245, 198, 206, 0.12);
+    transform: translateX(5px);
+}
+
+.question-card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Closing Message */
+.conversation-closing {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 15px;
+}
+
+.conversation-closing h2 {
+    color: #f5c6ce;
+    font-size: 25px;
+}
+
+.conversation-closing p {
+    font-size: 17px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    width: 100%;
+    padding: 40px 20px;
+    color: #f5dfe2;
+    box-sizing: border-box;
+}
+
+.site-footer p {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.site-footer span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .conversation-section {
+        width: 95%;
+        padding: 30px 10px;
+    }
+
+    .conversation-section h1 {
+        font-size: 27px;
+    }
+
+    .question-category h2 {
+        font-size: 21px;
+    }
+
+    .conversation-intro p,
+    .question-card p,
+    .conversation-closing p {
+        font-size: 15px;
+    }
+
+    .question-card {
+        padding: 12px 15px;
+    }
+}
+
+
+.question-card.selected {
+    background: rgba(245, 198, 206, 0.18);
+    border-left: 5px solid #f5c6ce;
+    transform: translateX(5px);
+}

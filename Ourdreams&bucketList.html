@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Me+Babe | Our Dreams & Bucket List</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="second.css">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <ul class="nav nav-tabs" id="mainNavigation">
+
+        <li class="nav-item">
+            <a class="nav-link" href="first.html" data-translate="home">
+                Home – Our Little World
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="OurloveStory.html" data-translate="story">
+                Our Love Story
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Memories&Galery.html" data-translate="memories">
+                Memories & Gallery
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Loveletters.html" data-translate="letters">
+                Love Letters
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active"
+               href="Ourdreams&bucketList.html"
+               aria-current="page"
+               data-translate="dreams">
+                Our Dreams & Bucket List
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Faitha&Pryars.html" data-translate="faith">
+                Faith & Prayers
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="OurSpecialDates.html" data-translate="dates">
+                Our Special Dates
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="OurPlaylist.html" data-translate="playlist">
+                Our Playlist
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="QuestionsForTwo.html" data-translate="questions">
+                Questions for Two
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">❤️❤️❤️</a>
+        </li>
+
+    </ul>
+
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+
+            <option value="en">🇬🇧 English</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="es">🇪🇸 Español</option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Main Content -->
+    <main class="story-content">
+
+        <!-- Image -->
+        <div class="image-container">
+            <img src="../me+babe/pictures/our dreams.png" alt="Me+Babe">
+        </div>
+
+
+        <!-- Dreams Content -->
+        <div class="dreams-content">
+
+            <h2 data-translate="dreamsHeadline">
+                Dreaming together, growing together, building together.
+            </h2>
+
+            <p data-translate="dreamsParagraph1">
+                A beautiful relationship is not only about enjoying the present.
+                It is also about having dreams, setting goals, encouraging each other,
+                and looking forward to the future.
+            </p>
+
+            <p data-translate="dreamsParagraph2">
+                This is where we write down the experiences we hope to share and
+                the things we would love to accomplish together.
+            </p>
+
+
+            <!-- Places We Want to Visit -->
+            <div class="dream-section">
+
+                <h3 data-translate="placesToVisit">Places We Want to Visit</h3>
+
+                <ul>
+                    <li data-translate="visitKorea">Explore beautiful cities in South Korea.</li>
+                    <li data-translate="visitEurope">Travel to Europe together.</li>
+                    <li data-translate="visitAfrica">Discover different African countries.</li>
+                    <li data-translate="romanticSeaside">Enjoy a romantic vacation by the sea.</li>
+                    <li data-translate="watchSunset">Watch the sunset in a place we have never visited.</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Things We Want to Experience -->
+            <div class="dream-section">
+
+                <h3 data-translate="thingsToExperience">Things We Want to Experience</h3>
+
+                <ul>
+                    <li data-translate="learnTogether">Learn something new together.</li>
+                    <li data-translate="cookTogether">Cook our favorite meals together.</li>
+                    <li data-translate="takePhotographs">Take beautiful photographs.</li>
+                    <li data-translate="celebrateMilestones">Celebrate important milestones.</li>
+                    <li data-translate="createTraditions">Create traditions of our own.</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Our Future Dreams -->
+            <div class="dream-section">
+
+                <h3 data-translate="futureDreams">Our Future Dreams</h3>
+
+                <ul>
+                    <li data-translate="peacefulHome">Build a peaceful and loving home.</li>
+                    <li data-translate="supportAmbitions">Support each other's professional ambitions.</li>
+                    <li data-translate="emotionalSpiritualGrowth">Grow emotionally and spiritually.</li>
+                    <li data-translate="stableFuture">Establish a stable future together.</li>
+                    <li data-translate="buildFamily">Build a family founded on love, respect, and faith.</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Personal Goals -->
+            <div class="dream-section">
+
+                <h3 data-translate="personalGoals">Personal Goals</h3>
+
+                <p data-translate="personalGoalsParagraph">
+                    We are two individuals with our own ambitions. We want to encourage
+                    each other to become better people without losing our individuality.
+                </p>
+
+            </div>
+
+
+            <!-- Closing Message -->
+            <div class="dreams-message">
+
+                <p data-translate="dreamsMessage">
+                    The dream is not simply to arrive somewhere together, but to become
+                    better people along the way.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="dreams-footer">
+
+        <p data-translate="dreamsFooter">
+            One dream, two hearts, and a journey still unfolding.
+        </p>
+
+    </footer>
+
+
+    <!-- Closing Signature -->
+    <p class="gallery-closing">
+        <span data-translate="madeWithLove">
+            Made with love ❤️ — Raul &amp; Sua
+        </span>
+    </p>
+
+
+    <!-- Translation System -->
+    <script src="translations.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <!-- some JavaScript-->
+     <script src="first.JS"></script>
+<script src="translations1.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navigation = document.getElementById("mainNavigation");
+
+    if (!navigation) return;
+
+    const links = navigation.querySelectorAll(".nav-link:not(.disabled)");
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+
+        const linkPage = new URL(link.href).pathname.split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.classList.remove("active");
+            link.removeAttribute("aria-current");
+        }
+
+    });
+
+});
+</script>
+</body>
+</html>
