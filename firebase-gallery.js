@@ -806,3 +806,6 @@ async function deleteMemory(memory) {
 }
 
 
+import { db, storage } from "./firebase.js";
+
+console.log("Gallery Firebase services loaded!");
