@@ -299,3 +299,115 @@ body {
         width: 100%;
     }
 }
+
+/*post.css*/
+
+body {
+    background: #fff9f8;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.posts-page {
+    max-width: 850px;
+}
+
+.posts-page header h1 {
+    font-weight: 700;
+    color: #a34d68;
+}
+
+.posts-page header p {
+    color: #777;
+}
+
+.posts-panel,
+.post-card {
+    background: white;
+    padding: 24px;
+    border-radius: 15px;
+    border: 1px solid #f0e4e6;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.post-card {
+    margin-bottom: 25px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.post-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #f7e2e9;
+    color: #a34d68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.post-author {
+    font-weight: bold;
+}
+
+.post-date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.post-text {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.7;
+}
+
+.post-media {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    background: #f5f5f5;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.post-actions {
+    border-top: 1px solid #eee;
+    margin-top: 18px;
+    padding-top: 14px;
+}
+
+.post-comments {
+    margin-top: 18px;
+}
+
+.post-comment {
+    background: #fff7f8;
+    padding: 12px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.post-comment small {
+    color: #888;
+}
+
+.post-delete {
+    margin-left: auto;
+}
+
+@media (max-width: 576px) {
+    .posts-panel,
+    .post-card {
+        padding: 16px;
+    }
+}
+
+
