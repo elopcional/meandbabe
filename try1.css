@@ -1,0 +1,135 @@
+/* =================================
+   LANGUAGE DROPDOWN
+================================= */
+
+.language-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+/* Main button */
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 10px 16px;
+
+    background: #ffffff;
+    color: #333333;
+
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+    background: #f7f7f7;
+    border-color: #bbbbbb;
+}
+
+/* Dropdown arrow */
+
+.dropdown-arrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.language-wrapper.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+
+.language-menu {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    min-width: 175px;
+    padding: 7px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition: all 0.25s ease;
+}
+
+/* Open dropdown */
+
+.language-wrapper.active .language-menu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+/* Language options */
+
+.language-option {
+    display: block;
+    width: 100%;
+
+    padding: 11px 12px;
+
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+
+    color: #333333;
+    text-align: left;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.language-option:hover {
+    background: #f2f4f7;
+}
+
+/* Selected language */
+
+.language-option.selected {
+    background: #eef4ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .language-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .language-menu {
+        min-width: 155px;
+    }
+
+}
+
+
+
