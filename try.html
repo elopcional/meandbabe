@@ -290,6 +290,90 @@
     <!-- type="module" is necessary because translations1.js imports Firebase -->
     <script type="module" src="translations1.js"></script>
 
+     <!-- Dates Footer -->
+    <footer class="dates-footer">
+
+        <p style="text-align: center;" data-translate="datesFooter">
+            Every date tells a story, and every story is worth remembering.
+        </p>
+
+    </footer>
+
+
+    <!-- Photo Gallery -->
+    <div class="photo-gallery">
+
+        <div class="photo-card">
+
+            <img src="images/photo1.jpg"
+                 alt="Our first memory"
+                 onclick="openLightbox(0)">
+
+            <h3 data-translate="firstMemoryTitle">Our First Memory</h3>
+
+            <p data-translate="firstMemoryDescription">
+                A beautiful moment we will always remember.
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img src="images/photo2.jpg"
+                 alt="Our special moments"
+                 onclick="openLightbox(1)">
+
+            <h3 data-translate="specialMomentsTitle">Special Moments</h3>
+
+            <p data-translate="specialMomentsDescription">
+                Every moment together becomes a precious memory.
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img src="images/photo3.jpg"
+                 alt="Our adventures"
+                 onclick="openLightbox(2)">
+
+            <h3 data-translate="adventuresTitle">Our Adventures</h3>
+
+            <p data-translate="adventuresDescription">
+                Exploring new places and creating memories together.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <button class="close-btn" onclick="closeLightbox()">×</button>
+
+        <button class="prev-btn" onclick="changeImage(-1)">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-image" src="" alt="">
+
+            <p id="lightbox-caption"></p>
+
+        </div>
+
+        <button class="next-btn" onclick="changeImage(1)">
+            &#10095;
+        </button>
+
+    </div>
+
+
 
     <!-- ================================== -->
     <!-- ACTIVE NAVIGATION -->
