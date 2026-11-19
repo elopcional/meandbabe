@@ -13,6 +13,7 @@
 
     <!-- My Custom CSS -->
     <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="try1.css">
     <link rel="stylesheet" href="second.css">
      <link rel="icon" type="image/svg+xml" href="./favicon/favicon.ico">
     
@@ -87,16 +88,43 @@
     </ul>
 
 
-    <!-- Language Selector -->
-    <div class="language-selector">
+    <!-- ================================== -->
+    <!-- LANGUAGE SELECTOR -->
+    <!-- ================================== -->
 
-        <select id="languageSelect" onchange="changeLanguage(this.value)">
-            <option value="en">🇬🇧 English</option>
-            <option value="ko">🇰🇷 한국어</option>
-            <option value="es">🇪🇸 Español</option>
-        </select>
+    <div class="language-wrapper">
+
+        <button
+            type="button"
+            class="language-btn"
+            id="languageBtn"
+            aria-expanded="false"
+            aria-controls="languageMenu">
+
+            <span class="language-icon">🌐</span>
+            <span id="currentLanguage">English</span>
+            <span class="dropdown-arrow">⌄</span>
+
+        </button>
+
+        <div class="language-menu" id="languageMenu">
+
+            <button type="button" class="language-option" data-lang="en">
+                🇬🇧 English
+            </button>
+
+            <button type="button" class="language-option" data-lang="ko">
+                🇰🇷 한국어
+            </button>
+
+            <button type="button" class="language-option" data-lang="es">
+                🇪🇸 Español
+            </button>
+
+        </div>
 
     </div>
+
 
 
     <!-- Homepage Pictures -->
@@ -208,5 +236,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Shared Translation JavaScript -->
     <script src="translations1.js"></script>
+     <script src="javascriptLanguage.js"></script>
 </body>
 </html>

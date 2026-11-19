@@ -12,6 +12,7 @@
     <!-- My Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="try1.css">
 <link rel="stylesheet" href="try.css">
     <link rel="stylesheet" href="second.css">
 
@@ -93,21 +94,42 @@
 </ul>
 
 
-<!-- Language Selector -->
+<!-- ================================== -->
+    <!-- LANGUAGE SELECTOR -->
+    <!-- ================================== -->
 
-<div class="language-selector">
+    <div class="language-wrapper">
 
-    <select id="languageSelect" onchange="changeLanguage(this.value)">
+        <button
+            type="button"
+            class="language-btn"
+            id="languageBtn"
+            aria-expanded="false"
+            aria-controls="languageMenu">
 
-        <option value="en">🇬🇧 English</option>
+            <span class="language-icon">🌐</span>
+            <span id="currentLanguage">English</span>
+            <span class="dropdown-arrow">⌄</span>
 
-        <option value="ko">🇰🇷 한국어</option>
+        </button>
 
-        <option value="es">🇪🇸 Español</option>
+        <div class="language-menu" id="languageMenu">
 
-    </select>
+            <button type="button" class="language-option" data-lang="en">
+                🇬🇧 English
+            </button>
 
-</div>
+            <button type="button" class="language-option" data-lang="ko">
+                🇰🇷 한국어
+            </button>
+
+            <button type="button" class="language-option" data-lang="es">
+                🇪🇸 Español
+            </button>
+
+        </div>
+
+    </div>
 
 
 <!-- Main Homepage Content -->
@@ -272,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -282,6 +304,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Shared Translation JavaScript -->
     <script src="translations1.js"></script>
-
+<script src="javascriptLanguage.js"></script>
 </body>
 </html>
