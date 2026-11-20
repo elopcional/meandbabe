@@ -5,6 +5,8 @@
    WELCOME POPUP FUNCTIONALITY
 ===================================== */
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const welcomePopup = document.getElementById("welcomePopup");
@@ -17,48 +19,55 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    // Function to close the welcome popup
+    // Keep the popup hidden when the page loads
+    welcomePopup.classList.add("hidden");
+
+    let popupTimer;
+
+    // Display the popup
+    function openPopup() {
+        welcomePopup.classList.remove("hidden");
+    }
+
+    // Close the popup and schedule it to reopen
     function closePopup() {
 
         welcomePopup.classList.add("hidden");
 
-        localStorage.setItem("welcomeSeen", "true");
+        // Reopen the popup after 10 seconds
+        clearTimeout(popupTimer);
 
+        popupTimer = setTimeout(function () {
+            openPopup();
+        }, 10000);
     }
+
+    // Show the popup for the first time after 10 seconds
+    popupTimer = setTimeout(function () {
+        openPopup();
+    }, 10000);
 
     // Close using the X button
     closeWelcome.addEventListener("click", closePopup);
 
-    // Close using the Enter Our World button
+    // Close using Enter Our World
     enterWebsite.addEventListener("click", closePopup);
 
-    // Close when clicking outside the welcome card
-    welcomePopup.addEventListener("click", function(event) {
-
+    // Close by clicking outside the popup card
+    welcomePopup.addEventListener("click", function (event) {
         if (event.target === welcomePopup) {
             closePopup();
         }
-
     });
 
     // Close using the Escape key
-    document.addEventListener("keydown", function(event) {
-
-        if (event.key === "Escape") {
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            !welcomePopup.classList.contains("hidden")
+        ) {
             closePopup();
         }
-
     });
-
-    // Show popup only if visitor has not dismissed it before
-    if (localStorage.getItem("welcomeSeen") === "true") {
-
-        welcomePopup.classList.add("hidden");
-
-    } else {
-
-        welcomePopup.classList.remove("hidden");
-
-    }
 
 });
