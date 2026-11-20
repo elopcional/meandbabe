@@ -11,11 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="galleryUpload.css">
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="try1.css">
     <link rel="stylesheet" href="second.css">
-    <link rel="stylesheet" href="gallery.css">
+     <!-- <link rel="stylesheet" href="gallery.css">-->
      <link rel="icon" type="image/svg+xml" href="./favicon/favicon.ico">
+
 </head>
 
 <body>
@@ -188,21 +190,23 @@
 
         <div class="gallery-actions">
 
-            <label for="imageUpload" class="upload-button"
-                   data-translate="addMemory">
-                + Add a Memory
-            </label>
+    <label for="imageUpload" class="upload-button"
+           data-translate="addMemory">
+        + Add a Memory
+    </label>
 
-            <input
-                type="file"
-                id="imageUpload"
-                accept="image/*,video/*"
-                multiple
-                hidden
-            >
+    <input
+        type="file"
+        id="imageUpload"
+        accept="image/*,video/*"
+        multiple
+        hidden
+    >
 
-        </div>
+</div>
 
+<!-- Selected images and videos will appear here -->
+<div class="gallery-container" id="galleryContainer"></div>
 
         <!-- GALLERY IMAGES -->
 
@@ -402,11 +406,6 @@
     </footer>
 
 
-    
-</body>
-</html>
-
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -436,16 +435,16 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-<!-- ================================== -->
-    <!-- JAVASCRIPT FILES -->
-    <!-- ================================== -->
 
     <!-- Gallery functionality -->
-    <script src="gallery.js"></script>
+  <!-- <script src="gallery.js"></script>-->
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
  <!-- Multilingual translation system -->
     <script src="translations1.js"></script>
      <script src="javascriptLanguage.js"></script>
+     <!-- Gallery and Supabase functionality -->
+     <script src="galleryUpload.js"></script>
+     <script type="module" src="test-supabase.js"></script>
 </body>
 </html>
