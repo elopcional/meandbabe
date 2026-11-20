@@ -130,211 +130,224 @@
     </div>
 
 
+<!-- ================================== -->
+<!-- GALLERY HEADER -->
+<!-- ================================== -->
+
+<header class="gallery-header">
+
+    <p class="eyebrow" data-translate="galleryEyebrow">
+        OUR LITTLE WORLD
+    </p>
+
+    <h1 data-translate="galleryTitle">
+        Little Moments, Unforgettable Memories
+    </h1>
+
+    <p class="subtitle" data-translate="gallerySubtitle">
+        Every picture tells a story, and every story is a piece of our journey.
+    </p>
+
+</header>
+
+
+<!-- ================================== -->
+<!-- MAIN GALLERY -->
+<!-- ================================== -->
+
+<main class="gallery-main">
+
+
+    <!-- CATEGORY FILTERS -->
+
+    <nav class="filter-buttons" aria-label="Gallery categories">
+
+        <button class="filter-btn active"
+                data-filter="all"
+                data-translate="allMemories">
+            All Memories
+        </button>
+
+        <button class="filter-btn"
+                data-filter="adventures"
+                data-translate="adventures">
+            Adventures
+        </button>
+
+        <button class="filter-btn"
+                data-filter="special"
+                data-translate="specialOccasions">
+            Special Occasions
+        </button>
+
+        <button class="filter-btn"
+                data-filter="videos"
+                data-translate="videos">
+            Videos
+        </button>
+
+    </nav>
+
+
+    <!-- UPLOAD BUTTON -->
+
+    <div class="gallery-actions">
+
+        <label for="imageUpload"
+               class="upload-button"
+               data-translate="addMemory">
+            + Add a Memory
+        </label>
+
+        <input
+            type="file"
+            id="imageUpload"
+            accept="image/*,video/*"
+            multiple
+            hidden
+        >
+
+    </div>
+
+
+    <!-- SELECTED IMAGES AND VIDEOS -->
+    <!-- Uploaded previews will appear here -->
+
+    <div id="galleryContainer" class="uploaded-gallery"></div>
+
 
     <!-- ================================== -->
-    <!-- GALLERY HEADER -->
+    <!-- ORIGINAL GALLERY IMAGES -->
     <!-- ================================== -->
 
-    <header class="gallery-header">
+    <section class="gallery-grid" id="galleryGrid">
 
-        <p class="eyebrow" data-translate="galleryEyebrow">
-            OUR LITTLE WORLD
-        </p>
 
-        <h1 data-translate="galleryTitle">
-            Little Moments, Unforgettable Memories
-        </h1>
+        <!-- OUR DATES -->
 
-        <p class="subtitle" data-translate="gallerySubtitle">
-            Every picture tells a story, and every story is a piece of our journey.
-        </p>
+        <article class="gallery-item" data-category="dates">
 
-    </header>
+            <img src="./pictures/image2.jpg"
+                 alt="Our special date">
 
+            <div class="image-caption">
 
-    <!-- ================================== -->
-    <!-- MAIN GALLERY -->
-    <!-- ================================== -->
+                <h3 data-translate="ourSpecialDate">
+                    Our Special Date
+                </h3>
 
-    <main class="gallery-container">
+                <p data-translate="beautifulDay">
+                    A beautiful day together ❤️
+                </p>
 
+            </div>
 
-        <!-- CATEGORY FILTERS -->
+        </article>
 
-        <nav class="filter-buttons" aria-label="Gallery categories">
 
-            <button class="filter-btn active" data-filter="all"
-                    data-translate="allMemories">
-                <a href="advantures.html">advantures</a>
-            </button>
+        <article class="gallery-item" data-category="dates">
 
-            <button class="filter-btn" data-filter="adventures"
-                    data-translate="adventures">
-                Adventures
-            </button>
+            <img src="./pictures/image7.JPEG"
+                 alt="A moment together">
 
-            <button class="filter-btn" data-filter="special"
-                    data-translate="specialOccasions">
-                Special Occasions
-            </button>
+            <div class="image-caption">
 
-            <button class="filter-btn" data-filter="videos"
-                    data-translate="videos">
-                Videos
-            </button>
+                <h3 data-translate="timeTogether">
+                    Time Together
+                </h3>
 
-        </nav>
+                <p data-translate="littleMomentsBigMemories">
+                    Little moments, big memories.
+                </p>
 
+            </div>
 
-        <!-- UPLOAD BUTTON -->
+        </article>
 
-        <div class="gallery-actions">
 
-    <label for="imageUpload" class="upload-button"
-           data-translate="addMemory">
-        + Add a Memory
-    </label>
+        <!-- ADVENTURES -->
 
-    <input
-        type="file"
-        id="imageUpload"
-        accept="image/*,video/*"
-        multiple
-        hidden
-    >
+        <article class="gallery-item" data-category="adventures">
 
-</div>
+            <img src="./pictures/visiting the world.jpg"
+                 alt="Our adventure">
 
-<!-- Selected images and videos will appear here -->
-<div class="gallery-container" id="galleryContainer"></div>
+            <div class="image-caption">
 
-        <!-- GALLERY IMAGES -->
+                <h3 data-translate="ourAdventure">
+                    Our Adventure
+                </h3>
 
-        <section class="gallery-grid" id="galleryGrid">
+                <p data-translate="exploringWorld">
+                    Exploring the world together 🌍
+                </p>
 
+            </div>
 
-            <!-- OUR DATES -->
+        </article>
 
-            <article class="gallery-item" data-category="dates">
 
-                <img src="./pictures/image2.jpg"
-                     alt="Our special date">
+        <!-- SPECIAL OCCASIONS -->
 
-                <div class="image-caption">
+        <article class="gallery-item" data-category="special">
 
-                    <h3 data-translate="ourSpecialDate">
-                        Our Special Date
-                    </h3>
+            <img src="./pictures/image9.jpg"
+                 alt="Special celebration">
 
-                    <p data-translate="beautifulDay">
-                        A beautiful day together ❤️
-                    </p>
+            <div class="image-caption">
 
-                </div>
+                <h3 data-translate="specialCelebration">
+                    A Special Celebration
+                </h3>
 
-            </article>
+                <p data-translate="dayWorthRemembering">
+                    A day worth remembering.
+                </p>
 
+            </div>
 
-            <article class="gallery-item" data-category="dates">
+        </article>
 
-                <img src="./pictures/image7.JPEG"
-                     alt="A moment together">
 
-                <div class="image-caption">
+        <!-- EVERYDAY MOMENTS -->
 
-                    <h3 data-translate="timeTogether">
-                        Time Together
-                    </h3>
+        <article class="gallery-item" data-category="everyday">
 
-                    <p data-translate="littleMomentsBigMemories">
-                        Little moments, big memories.
-                    </p>
+            <img src="./pictures/image8.JPG"
+                 alt="Everyday memory">
 
-                </div>
+            <div class="image-caption">
 
-            </article>
+                <h3 data-translate="simpleHappiness">
+                    Simple Happiness
+                </h3>
 
+                <p data-translate="littleThingsSmile">
+                    The little things that make us smile.
+                </p>
 
-            <!-- ADVENTURES -->
+            </div>
 
-            <article class="gallery-item" data-category="adventures">
+        </article>
 
-                <img src="./pictures/visiting the world.jpg"
-                     alt="Our adventure">
+    </section>
 
-                <div class="image-caption">
 
-                    <h3 data-translate="ourAdventure">
-                        Our Adventure
-                    </h3>
+    <!-- EMPTY GALLERY MESSAGE -->
 
-                    <p data-translate="exploringWorld">
-                        Exploring the world together 🌍
-                    </p>
+    <p id="emptyMessage"
+       class="empty-message"
+       hidden
+       data-translate="emptyGallery">
 
-                </div>
+        No memories in this category yet. Add a new memory!
 
-            </article>
+    </p>
 
+</main>
 
-            <!-- SPECIAL OCCASIONS -->
 
-            <article class="gallery-item" data-category="special">
-
-                <img src="./pictures/image9.jpg"
-                     alt="Special celebration">
-
-                <div class="image-caption">
-
-                    <h3 data-translate="specialCelebration">
-                        A Special Celebration
-                    </h3>
-
-                    <p data-translate="dayWorthRemembering">
-                        A day worth remembering.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- EVERYDAY MOMENTS -->
-
-            <article class="gallery-item" data-category="everyday">
-
-                <img src="./pictures/image8.JPG"
-                     alt="Everyday memory">
-
-                <div class="image-caption">
-
-                    <h3 data-translate="simpleHappiness">
-                        Simple Happiness
-                    </h3>
-
-                    <p data-translate="littleThingsSmile">
-                        The little things that make us smile.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </section>
-
-
-        <!-- EMPTY GALLERY MESSAGE -->
-
-        <p id="emptyMessage" class="empty-message" hidden
-           data-translate="emptyGallery">
-
-            No memories in this category yet. Add a new memory!
-
-        </p>
-
-    </main>
-
-
+   
     <!-- ================================== -->
     <!-- IMAGE LIGHTBOX -->
     <!-- ================================== -->
