@@ -412,3 +412,170 @@ body {
 
 
 
+
+/* WELCOME POPUP */
+
+
+/* ==========================================
+   WELCOME POPUP
+========================================== */
+
+.welcome-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+}
+
+/* HIDE WELCOME POPUP */
+
+.welcome-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* WELCOME CARD */
+
+.welcome-card {
+    position: relative;
+
+    background: #fffaf7;
+    max-width: 480px;
+    width: 100%;
+
+    padding: 45px 30px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+
+    animation: welcomeAppear 0.6s ease;
+}
+
+/* CLOSE BUTTON */
+
+.welcome-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 30px;
+    cursor: pointer;
+
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.welcome-close:hover {
+    color: #d66b83;
+}
+
+/* HEART */
+
+.welcome-heart {
+    color: #d66b83;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+/* EYEBROW TEXT */
+
+.welcome-eyebrow {
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #b77a83;
+}
+
+/* HEADING */
+
+.welcome-card h2 {
+    color: #563b43;
+    font-size: 27px;
+    margin: 15px 0;
+}
+
+/* PARAGRAPH */
+
+.welcome-card p {
+    color: #77666b;
+    line-height: 1.8;
+}
+
+/* ENTER WEBSITE BUTTON */
+
+.welcome-button {
+    margin-top: 20px;
+
+    background: #bd7888;
+    color: white;
+
+    border: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.welcome-button:hover {
+    background: #965365;
+    transform: translateY(-2px);
+}
+
+/* ENTRANCE ANIMATION */
+
+@keyframes welcomeAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .welcome-card {
+        padding: 40px 22px;
+    }
+
+    .welcome-card h2 {
+        font-size: 23px;
+    }
+
+    .welcome-card p {
+        font-size: 14px;
+    }
+
+    .welcome-heart {
+        font-size: 36px;
+    }
+
+    .welcome-button {
+        padding: 12px 22px;
+    }
+}
