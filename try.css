@@ -605,3 +605,497 @@ body {
     flex-wrap: wrap;
     margin-top: 10px;
 }
+
+
+/*zooming in the gallery images styling */
+
+/* ================================== */
+/* IMAGE LIGHTBOX */
+/* ================================== */
+
+.gallery-item img {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+/* LIGHTBOX BACKGROUND */
+
+.image-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+/* SHOW LIGHTBOX */
+
+.image-lightbox.active {
+    display: flex;
+}
+
+/* ENLARGED IMAGE */
+
+.image-lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+
+    animation: imageZoom 0.3s ease;
+}
+
+/* CLOSE BUTTON */
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+
+    color: white;
+    background: transparent;
+
+    border: none;
+    font-size: 45px;
+
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.lightbox-close:hover {
+    color: #87CEFA;
+}
+
+/* OPENING ANIMATION */
+
+@keyframes imageZoom {
+    from {
+        transform: scale(0.75);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .image-lightbox {
+        padding: 15px;
+    }
+
+    .image-lightbox img {
+        max-width: 96%;
+        max-height: 80vh;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 20px;
+        font-size: 38px;
+    }
+}
+
+
+/*zooming images styling*/
+
+/* ==========================================
+   GALLERY IMAGE INTERACTION
+========================================== */
+
+.gallery-item img,
+.gallery-item video {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ==========================================
+   LIGHTBOX BACKGROUND
+========================================== */
+
+.lightbox {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 99999;
+
+    background: rgba(0, 0, 0, 0.94);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+
+/* ==========================================
+   LIGHTBOX CONTENT
+========================================== */
+
+.lightbox-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 85%;
+    max-height: 80vh;
+}
+
+.lightbox-media {
+    display: block;
+
+    max-width: 100%;
+    max-height: 75vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ==========================================
+   LIGHTBOX CAPTION
+========================================== */
+
+#lightboxCaption {
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.close-lightbox {
+    position: absolute;
+
+    top: 15px;
+    right: 30px;
+
+    color: white;
+
+    background: transparent;
+    border: none;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+.close-lightbox:hover {
+    color: #87CEFA;
+}
+
+
+/* ==========================================
+   PREVIOUS AND NEXT BUTTONS
+========================================== */
+
+.lightbox-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.lightbox-arrow:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.lightbox-arrow.previous {
+    left: 25px;
+}
+
+.lightbox-arrow.next {
+    right: 25px;
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 768px) {
+
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox-content {
+        max-width: 85%;
+    }
+
+    .lightbox-media {
+        max-height: 70vh;
+    }
+
+    .lightbox-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .lightbox-arrow.previous {
+        left: 5px;
+    }
+
+    .lightbox-arrow.next {
+        right: 5px;
+    }
+
+    .close-lightbox {
+        top: 5px;
+        right: 15px;
+    }
+
+    #lightboxCaption {
+        font-size: 15px;
+        bottom: 20px;
+    }
+
+}
+
+
+/*making images of my gallery bigger*/
+
+/* ==========================================
+   ORIGINAL GALLERY - PRESERVE ITS APPEARANCE
+========================================== */
+
+.gallery-item img {
+    cursor: zoom-in;
+}
+
+
+/* ==========================================
+   FULLSCREEN IMAGE LIGHTBOX
+========================================== */
+
+.lightbox {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+
+    z-index: 99999;
+
+    background: rgba(0, 0, 0, 0.96);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+/* Show fullscreen viewer */
+
+.lightbox.active {
+    display: flex;
+}
+
+/* Image container */
+
+.lightbox-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* Enlarged image */
+
+.lightbox-content img {
+    max-width: 95vw;
+    max-height: 92vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+
+    animation: imageAppear 0.3s ease;
+}
+
+/* Close button */
+
+.close-lightbox {
+    position: absolute;
+
+    top: 15px;
+    right: 25px;
+
+    z-index: 100001;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+/* Previous and next arrows */
+
+.lightbox-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 100001;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.lightbox-arrow.previous {
+    left: 20px;
+}
+
+.lightbox-arrow.next {
+    right: 20px;
+}
+
+/* Caption */
+
+#lightboxCaption {
+    position: absolute;
+
+    bottom: 15px;
+
+    color: white;
+
+    text-align: center;
+
+    width: 80%;
+
+    font-size: 16px;
+}
+
+/* Opening animation */
+
+@keyframes imageAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .lightbox-content img {
+        max-width: 96vw;
+        max-height: 85vh;
+    }
+
+    .lightbox-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .lightbox-arrow.previous {
+        left: 5px;
+    }
+
+    .lightbox-arrow.next {
+        right: 5px;
+    }
+
+}

@@ -209,7 +209,6 @@ document.addEventListener("keydown", event => {
 
 });
 
-
 // Add new memories from your computer
 imageUpload.addEventListener("change", event => {
 
@@ -368,6 +367,7 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
+
 
 
 // Import the functions you need from the SDKs you need

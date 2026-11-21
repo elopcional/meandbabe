@@ -150,73 +150,7 @@
 
 </header>
 
-
 <!-- ================================== -->
-<!-- MAIN GALLERY -->
-<!-- ================================== -->
-
-<main class="gallery-main">
-
-
-    <!-- CATEGORY FILTERS -->
-
-    <nav class="filter-buttons" aria-label="Gallery categories">
-
-        <button class="filter-btn active"
-                data-filter="all"
-                data-translate="allMemories">
-            All Memories
-        </button>
-
-        <button class="filter-btn"
-                data-filter="adventures"
-                data-translate="adventures">
-            Adventures
-        </button>
-
-        <button class="filter-btn"
-                data-filter="special"
-                data-translate="specialOccasions">
-            Special Occasions
-        </button>
-
-        <button class="filter-btn"
-                data-filter="videos"
-                data-translate="videos">
-            Videos
-        </button>
-
-    </nav>
-
-
-    <!-- UPLOAD BUTTON -->
-
-    <div class="gallery-actions">
-
-        <label for="imageUpload"
-               class="upload-button"
-               data-translate="addMemory">
-            + Add a Memory
-        </label>
-
-        <input
-            type="file"
-            id="imageUpload"
-            accept="image/*,video/*"
-            multiple
-            hidden
-        >
-
-    </div>
-
-
-    <!-- SELECTED IMAGES AND VIDEOS -->
-    <!-- Uploaded previews will appear here -->
-
-    <div id="galleryContainer" class="uploaded-gallery"></div>
-
-
-    <!-- ================================== -->
     <!-- ORIGINAL GALLERY IMAGES -->
     <!-- ================================== -->
 
@@ -375,7 +309,6 @@
 
     </div>
 
-
     <!-- ================================== -->
     <!-- GALLERY INTRODUCTION -->
     <!-- ================================== -->
@@ -449,15 +382,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    <!-- Gallery functionality -->
-  <!-- <script src="gallery.js"></script>-->
+   
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
- <!-- Multilingual translation system -->
     <script src="translations1.js"></script>
-     <script src="javascriptLanguage.js"></script>
-     <!-- Gallery and Supabase functionality -->
-     <script src="galleryUpload.js"></script>
-     <script type="module" src="test-supabase.js"></script>
+    <script src="javascriptLanguage.js"></script>
+    <!-- Gallery and Supabase functionality -->
+    <script src="galleryUpload.js"></script>
+    <script type="module" src="test-supabase.js"></script>
+    <script src="zoomingImages.js"></script> 
 </body>
 </html>
