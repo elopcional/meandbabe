@@ -21,164 +21,50 @@
     <link rel="icon" type="image/svg+xml" href="./favicon/favicon.ico">
 </head>
 
-  <!-- ================================== -->
-    <!-- ORIGINAL GALLERY IMAGES -->
-    <!-- ================================== -->
+ 
+<!-- Our Love Counter -->
+<section class="love-counter-section text-center py-5">
 
-    <section class="gallery-grid" id="galleryGrid">
+    <h2 class="love-counter-title">Our Love Journey ❤️</h2>
 
-
-        <!-- OUR DATES -->
-
-        <article class="gallery-item" data-category="dates">
-
-            <img src="./pictures/image2.jpg"
-                 alt="Our special date">
-
-            <div class="image-caption">
-
-                <h3 data-translate="ourSpecialDate">
-                    Our Special Date
-                </h3>
-
-                <p data-translate="beautifulDay">
-                    A beautiful day together ❤️
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <article class="gallery-item" data-category="dates">
-
-            <img src="./pictures/image7.JPEG"
-                 alt="A moment together">
-
-            <div class="image-caption">
-
-                <h3 data-translate="timeTogether">
-                    Time Together
-                </h3>
-
-                <p data-translate="littleMomentsBigMemories">
-                    Little moments, big memories.
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <!-- ADVENTURES -->
-
-        <article class="gallery-item" data-category="adventures">
-
-            <img src="./pictures/visiting the world.jpg"
-                 alt="Our adventure">
-
-            <div class="image-caption">
-
-                <h3 data-translate="ourAdventure">
-                    Our Adventure
-                </h3>
-
-                <p data-translate="exploringWorld">
-                    Exploring the world together 🌍
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <!-- SPECIAL OCCASIONS -->
-
-        <article class="gallery-item" data-category="special">
-
-            <img src="./pictures/image9.jpg"
-                 alt="Special celebration">
-
-            <div class="image-caption">
-
-                <h3 data-translate="specialCelebration">
-                    A Special Celebration
-                </h3>
-
-                <p data-translate="dayWorthRemembering">
-                    A day worth remembering.
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <!-- EVERYDAY MOMENTS -->
-
-        <article class="gallery-item" data-category="everyday">
-
-            <img src="./pictures/image8.JPG"
-                 alt="Everyday memory">
-
-            <div class="image-caption">
-
-                <h3 data-translate="simpleHappiness">
-                    Simple Happiness
-                </h3>
-
-                <p data-translate="littleThingsSmile">
-                    The little things that make us smile.
-                </p>
-
-            </div>
-
-        </article>
-
-    </section>
-
-
-    <!-- EMPTY GALLERY MESSAGE -->
-
-    <p id="emptyMessage"
-       class="empty-message"
-       hidden
-       data-translate="emptyGallery">
-
-        No memories in this category yet. Add a new memory!
-
+    <p class="love-counter-subtitle">
+        Every second with you is a beautiful blessing.
     </p>
 
-</main>
+    <div class="love-counter-container">
 
+        <div class="time-box">
+            <span id="days">0</span>
+            <small>Days</small>
+        </div>
 
-   
-    <!-- ================================== -->
-    <!-- IMAGE LIGHTBOX -->
-    <!-- ================================== -->
+        <div class="time-box">
+            <span id="hours">0</span>
+            <small>Hours</small>
+        </div>
 
-    <div class="lightbox" id="lightbox">
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+        </div>
 
-        <button class="close-lightbox" id="closeLightbox"
-                aria-label="Close">
-            &times;
-        </button>
-
-        <button class="lightbox-arrow previous" id="previousImage"
-                aria-label="Previous image">
-            &#10094;
-        </button>
-
-        <div class="lightbox-content" id="lightboxContent"></div>
-
-        <button class="lightbox-arrow next" id="nextImage"
-                aria-label="Next image">
-            &#10095;
-        </button>
-
-        <p id="lightboxCaption"></p>
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+        </div>
 
     </div>
+
+    <p id="love-anniversary-message" class="anniversary-message">
+        Our beautiful journey continues... 💕
+    </p>
+
+    <p class="love-counter-footer">
+        Raul & Sua — Two different stories, one beautiful journey.
+    </p>
+
+</section>
+
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -191,6 +77,6 @@
 <script src="javascriptLanguage.js"></script>
 <script src="welcomePopup.js"></script>
 <script src="zoomingImages.js"></script>
-
+<script src="thecount.js"></script>
 </body>
 </html>
